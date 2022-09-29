@@ -1,0 +1,10 @@
+/* .container,.row,.col{border: 1px solid gray;} */
+.square {
+  border: 10px solid rgb(250, 113, 113);
+  height: 175px;
+  text-align: center;
+  padding-top: 15px;
+  background-color: rgb(22, 22, 20);
+  font-weight: 1000;
+  font-size: 80px;
+}
