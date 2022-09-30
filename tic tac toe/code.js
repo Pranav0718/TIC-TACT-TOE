@@ -66,4 +66,9 @@ $(document).ready(function () {
       return;
     }
   });
+  let animatetext = function () {
+    let $elements = $(".tt-holder .tt");
+    $(".ttt").tickerText($elements, 17, 2, 30, 1, 0.7, 3);
+  };
+  $(animatetext);
 });

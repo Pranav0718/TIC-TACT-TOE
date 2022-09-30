@@ -1,10 +1,43 @@
-/* .container,.row,.col{border: 1px solid gray;} */
-.square {
-  border: 10px solid rgb(250, 113, 113);
-  height: 175px;
+@charset "utf-8";
+/* some custom styles related to ticket text */
+
+#holder {
+  width: 100%;
   text-align: center;
-  padding-top: 15px;
-  background-color: rgb(22, 22, 20);
-  font-weight: 1000;
-  font-size: 80px;
 }
+
+.tt {
+  display: none;
+}
+
+.red {
+  color: rgb(228, 161, 161);
+}
+
+.ttt {
+  margin: 0;
+}
+
+.ttt::after {
+  content: "\0020";
+  animation: pulse 1s infinite;
+  color: transparent;
+  border-right: 3px solid black;
+  margin-left: 4px;
+}
+
+@keyframes pulse {
+  0% {
+    border-right: 3px solid black;
+  }
+  50% {
+    border-right: 3px solid transparent;
+  }
+  100% {
+    border-right: 3px solid black;
+  }
+}
+
+/* h1 {
+  font-weight: 200;
+} */
